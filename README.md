@@ -1,27 +1,6 @@
-# @south-paw/awesome-gatsby-starter
+# Bridge Design
 
-👌 A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment
-
-[![Netlify Status][netlify-master-status-img]][netlify-master-status]
-
-> Prefer TypeScript? No worries, try [awesome-gatsby-starter-ts](https://github.com/South-Paw/awesome-gatsby-starter-ts)
-
-## Features
-
-- [Gatsby MDX](https://www.gatsbyjs.org/packages/gatsby-plugin-mdx/) for creation of pages with Markdown + JSX
-- [Storybook](https://storybook.js.org/) with the Storybook Docs addon and support for components that use Gatsby components such as Link and StaticQuery
-- [styled-components](https://www.styled-components.com/) for CSS-in-JS
-- [ESLint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb)
-- [Prettier](https://prettier.io/) integrated into ESLint
-- A few example components and pages with stories and simple site structure
-
-## Getting started
-
-Install this starter (assuming you have [`gatsby-cli`](https://www.npmjs.com/package/gatsby-cli) installed) by running the following command:
-
-```bash
-gatsby new your-projects-name https://github.com/South-Paw/awesome-gatsby-starter
-```
+🌉 Bridge is a tool to bridge the gap between design and development
 
 ## Development
 
@@ -54,13 +33,6 @@ yarn serve
 yarn clean
 ```
 
-## Issues and Bugs
-
-If you manage to find any, please report them [here](https://github.com/South-Paw/awesome-gatsby-starter/issues) so they can be squashed.
-
 ## License
 
 MIT, see the [LICENSE](https://github.com/bridge-design/bridge-design.github.com/blob/develop/LICENSE) file.
-
-[netlify-master-status-img]: https://api.netlify.com/api/v1/badges/f517f897-7c3d-427a-a46f-11e07daa2d96/deploy-status
-[netlify-master-status]: https://app.netlify.com/sites/awesome-gatsby-starter/deploys
