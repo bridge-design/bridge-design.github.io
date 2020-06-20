@@ -55,7 +55,7 @@ const Footer = () => (
         <Right>
           <div>
             Copyright ©{' '}
-            Bridge.io, 2020.
+            Bridge Design, 2020.
           </div>
           <div>
             <a href="https://github.com/bridge-design/bridge-design.github.com/blob/develop/LICENSE">CC BY-NC</a> Licensed.
