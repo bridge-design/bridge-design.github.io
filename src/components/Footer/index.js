@@ -58,7 +58,7 @@ const Footer = () => (
             Bridge.io, 2020.
           </div>
           <div>
-            <a href="https://github.com/South-Paw/awesome-gatsby-starter/blob/master/LICENSE">CC BY-NC</a> Licensed.
+            <a href="https://github.com/bridge-design/bridge-design.github.com/blob/develop/LICENSE">CC BY-NC</a> Licensed.
           </div>
         </Right>
       </Inner>

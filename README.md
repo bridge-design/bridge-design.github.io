@@ -60,7 +60,7 @@ If you manage to find any, please report them [here](https://github.com/South-Pa
 
 ## License
 
-MIT, see the [LICENSE](https://github.com/South-Paw/awesome-gatsby-starter/blob/master/LICENSE) file.
+MIT, see the [LICENSE](https://github.com/bridge-design/bridge-design.github.com/blob/develop/LICENSE) file.
 
 [netlify-master-status-img]: https://api.netlify.com/api/v1/badges/f517f897-7c3d-427a-a46f-11e07daa2d96/deploy-status
 [netlify-master-status]: https://app.netlify.com/sites/awesome-gatsby-starter/deploys
