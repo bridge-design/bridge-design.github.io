@@ -5,7 +5,7 @@ module.exports = {
     description: 'A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment',
     keywords: ['gatsby', 'gatsbyjs', 'gatsby starter', 'github'],
     type: 'website',
-    image: 'https://awesome-gatsby-starter.netlify.app/ok.png',
+    image: 'https://awesome-gatsby-starter.netlify.app/bridge.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -44,7 +44,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/ok.png', // This path is relative to the root of the site
+        icon: 'src/assets/bridge.png', // This path is relative to the root of the site
       },
     },
 
