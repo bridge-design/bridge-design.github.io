@@ -14,7 +14,6 @@ const Main = styled('div')`
 const Site = ({ location, pageContext, path, seo, children }) => (
   <Theme>
     <Seo location={location} pageContext={pageContext} seo={seo} />
-    <Navigation path={path} />
     <Main>{children}</Main>
     <Footer />
   </Theme>
