@@ -33,7 +33,7 @@ const IndexPage = (props) => (
       <Card>
 
         <Title>
-          Bridge.io
+          Bridge
         </Title>
 
         <Slogan>

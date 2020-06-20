@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    name: 'Awesome Gatsby Starter',
-    basepath: 'https://awesome-gatsby-starter.netlify.app',
-    description: 'A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment',
-    keywords: ['gatsby', 'gatsbyjs', 'gatsby starter', 'github'],
+    name: 'Bridge the gap between design and development',
+    basepath: 'https://bridge-design.github.io',
+    description: 'Bridge is a tool to bridge the gap between design and development.',
+    keywords: ['design systems', 'design', 'development', 'ui'],
     type: 'website',
-    image: 'https://awesome-gatsby-starter.netlify.app/bridge.png',
+    image: 'https://bridge-design.github.io/bridge.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
