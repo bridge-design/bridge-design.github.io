@@ -25,7 +25,11 @@
     "start": "gatsby develop",
     "start:storybook": "cross-env NODE_ENV=production start-storybook -p 9000 -c .storybook",
     "lint": "eslint .",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy:build": "gatsby build --prefix-paths && npm run deploy:remove-extra",
+    "deploy:release": "git-directory-deploy --directory ./public --repo origin --branch master",
+    "deploy:remove-extra": "rm public/*.js.map",
+    "deploy": "npm run deploy:build && npm run deploy:release"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.6",
@@ -66,6 +70,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "git-directory-deploy": "^1.5.1",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
     "rimraf": "^3.0.2"
