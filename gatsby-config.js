@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     name: 'Bridge the gap between design and development',
-    basepath: 'https://bridge-design.github.io',
+    basepath: 'https://bridge-tool.github.io',
     description: 'Bridge is a tool to bridge the gap between design and development.',
     keywords: ['design systems', 'design', 'development', 'ui'],
     type: 'website',
-    image: 'https://bridge-design.github.io/bridge.png',
+    image: 'https://bridge-tool.github.io/bridge.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
