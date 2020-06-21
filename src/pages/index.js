@@ -37,7 +37,7 @@ const IndexPage = (props) => (
         </Title>
 
         <Slogan>
-          bridges the gap between design and development
+          the tool to bridge the gap between design and development
         </Slogan>
 
       </Card>
