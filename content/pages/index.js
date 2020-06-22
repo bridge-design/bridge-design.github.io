@@ -23,7 +23,7 @@ const Slogan = styled.main`
 `;
 
 const seo = {
-  title: 'Home',
+  title: 'Bridge',
 };
 
 const IndexPage = (props) => (
