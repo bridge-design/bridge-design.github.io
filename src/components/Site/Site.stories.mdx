@@ -1,0 +1,12 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Site } from '.';
+
+<Meta title="Site" />
+
+<Preview>
+  <Story name="Default">
+    <Site path="/" location={{ pathname: '/' }} pageContext={{}}>
+      [site children]
+    </Site>
+  </Story>
+</Preview>
