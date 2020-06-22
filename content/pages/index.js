@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../components/Container';
-import { Site } from '../components/Site';
+import { Container } from '../../src/components/Container';
+import { Site } from '../../src/components/Site';
 
 const Card = styled.div`
   position: absolute;
