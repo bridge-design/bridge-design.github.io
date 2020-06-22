@@ -1962,9 +1962,9 @@
     uuid "^8.0.0"
 
 "@storybook/addon-docs@^6.0.0-beta.31":
-  version "6.0.0-beta.31"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-6.0.0-beta.31.tgz#1ba507b4ccfabed7755e50aeb1659aaf67e86e52"
-  integrity sha512-K8j+3CriSAeqIXpjbyqexT8wkk3HOCR/lOWaqkxEQX4mJjPVN1kRtFG/mHc6ABGJJlKLNPckKRhMmxKU14Dk4g==
+  version "6.0.0-beta.33"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-6.0.0-beta.33.tgz#9d8a63752b92f085c74d009eeca75e4f041192e1"
+  integrity sha512-ICaziG/nfblM45sdeV+SZBcd9W2gcdNnDII5eYYtkFEn01Lln/kTatkggIjyJRFPx52ffPJHfD+jMbAq0HxGHg==
   dependencies:
     "@babel/generator" "^7.9.6"
     "@babel/parser" "^7.9.6"
