@@ -1,13 +1,23 @@
 export const colors = {
 
   primary: {
-    value: '#3F8EB7',
-    meaning: 'Primary color',
+    value: '#384259',
+    meaning: 'Main brand color',
   },
 
-  sub: {
-    value: '#999999',
-    meaning: 'Grey',
+  hightlight: {
+    value: '#f73859',
+    meaning: 'Highlights',
+  },
+
+  secondary: {
+    value: '#7ac7c4',
+    meaning: 'Color for secondary content and elements',
+  },
+
+  shadow: {
+    value: '#c4edde',
+    meaning: 'Disabled or not active things',
   }
 
 };
