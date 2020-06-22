@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{uCYL:function(e,a,n){"use strict";n.r(a);n("E5k/");var t=n("q1tI"),i=n.n(t),s=(n("aAma"),n("R3xB")),c={title:"New index page"};a.default=function(e){return i.a.createElement(s.a,Object.assign({seo:c},e),"blah blah")}}}]);
+//# sourceMappingURL=component---content-pages-new-index-js-0133db023b9f361fa727.js.map
