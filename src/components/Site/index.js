@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint'
+
 import { Footer } from '../Footer';
 import { Navigation } from '../Navigation';
 import { Theme } from '../Theme';
 import { Seo } from './Seo';
 
-const Main = styled('div')`
-  margin: 32px 0;
-  min-height: calc(100vh - 56px - 64px - 97px);
-`;
+export const Main = styled.div`
+  ${breakpoint('desktop') `
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto -100px auto;
+  `}
+`
 
 const Site = ({ location, pageContext, path, seo, children }) => (
   <Theme>

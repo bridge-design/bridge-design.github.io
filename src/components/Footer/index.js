@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Container } from '../Container';
 
 const Wrapper = styled('footer')`
+  height: 100px;
   padding: 24px 0;
   background-color: #222;
   border-top: 1px solid rgba(0, 0, 0, 0.38);
