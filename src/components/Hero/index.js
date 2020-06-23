@@ -27,11 +27,20 @@ export const Slogan = styled.span`
   font-weight: 200;
 `;
 
+export const ValueText = styled.p`
+  font-size: 20px;
+  font-family: ${fonts.regular};
+  font-weight: 200;
+`;
+
 const Hero = () => (
   <Wrapper>
-    <Logo/><br/>
-    <Name>Bridge </Name>
-    <Slogan> a tool to bridge the gap between design and development</Slogan>
+    <Logo/>
+    <p>
+      <Name>Bridge </Name>
+      <Slogan> a tool to bridge the gap between design and development</Slogan>
+    </p>
+    <ValueText>Build your brand and design system together!</ValueText>
   </Wrapper>
 );
 
