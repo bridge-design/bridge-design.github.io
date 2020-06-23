@@ -6,7 +6,7 @@ import { Site } from '../components/Site';
 const Page = ({ children, ...other }) => {
   return (
     <Site {...other}>
-      <Container>{children}</Container>
+      {children}
     </Site>
   );
 };

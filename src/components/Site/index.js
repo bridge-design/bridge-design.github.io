@@ -3,17 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint'
 
+import { Container } from '../Container';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
 import { Theme } from '../Theme';
 import { Seo } from './Seo';
 
-export const Main = styled.div`
-  ${breakpoint('desktop') `
-    max-width: 1200px;
-    min-height: 100vh;
-    margin: 0 auto -100px auto;
-  `}
+export const Main = styled(Container)`
+  min-height: calc(100vh - 100px - 80px);
 `
 
 const Site = ({ header = true, location, pageContext, path, seo, children }) => (
