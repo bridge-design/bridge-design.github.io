@@ -53,6 +53,12 @@ module.exports = {
         icon: 'src/assets/bridge.png', // This path is relative to the root of the site
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        include: /src/
+      }
+    },
 
     // The following are all optional plugins that you may find useful.
     // If you choose not to use them, consider removing them from your package.json!
