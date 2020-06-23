@@ -5,3 +5,53 @@ title: New index page
 import { Hero } from '../../src/components/Hero';
 
 <Hero/>
+
+import { Grid, Cell } from 'styled-css-grid';
+
+import { FeatureCard } from '../../src/components/FeatureCard';
+
+<Grid columns={3} gap={'20px'} style={{marginTop: '20px'}}>
+
+  <Cell width={1}>
+     <FeatureCard
+        title="Friendly environment"
+        subtitle="Bridge offers friendly environment and familiar interface for designers, developers, and other specialists."
+        />
+  </Cell>
+
+  <Cell width={1}>
+    <FeatureCard
+        title="Full control over sources"
+        subtitle=""
+        />
+  </Cell>
+
+  <Cell width={1}>
+    <FeatureCard
+        title="Integration with tools"
+        subtitle=""
+        />
+  </Cell>
+
+  <Cell width={1}>
+    <FeatureCard
+        title="Rich features for free"
+        subtitle=""
+        />
+  </Cell>
+
+  <Cell width={1}>
+    <FeatureCard
+        title="Affordable plans"
+        subtitle="We carefuly analised the pricing models of existing solutions to be able to offer you better plans for less money."
+        />
+  </Cell>
+
+  <Cell width={1}>
+    <FeatureCard
+        title="Scale with your team"
+        subtitle=""
+        />
+  </Cell>
+
+</Grid>
