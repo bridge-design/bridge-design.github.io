@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../Container';
 
-import { colors } from '../DesignTokens';
+import { colors, fonts } from '../DesignTokens';
 
 const Wrapper = styled('footer')`
   height: 100px;
@@ -11,7 +11,10 @@ const Wrapper = styled('footer')`
   border-top: 1px solid rgba(0, 0, 0, 0.38);
   color: rgba(255, 255, 255, 0.54);
   font-size: 14px;
+  font-family: ${fonts.regular};
+  font-weight: 200;
   line-height: 24px;
+
 
   a {
     color: #fff;
