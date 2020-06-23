@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../Container';
 
+import { colors } from '../DesignTokens';
+
 const Wrapper = styled('footer')`
   height: 100px;
   padding: 24px 0;
-  background-color: #222;
+  background-color: ${colors.primary.value};
   border-top: 1px solid rgba(0, 0, 0, 0.38);
   color: rgba(255, 255, 255, 0.54);
   font-size: 14px;
