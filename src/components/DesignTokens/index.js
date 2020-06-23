@@ -21,3 +21,8 @@ export const colors = {
   }
 
 };
+
+export const fonts = {
+  logo: '"Seaweed Script", cursive',
+  regular: '"Catamaran", sans-serif',
+}
