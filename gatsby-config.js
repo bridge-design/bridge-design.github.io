@@ -60,14 +60,20 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
-          `Seaweed+Script`,
-          `Catamaran:wght@200`,
-          // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-        ],
-        display: 'swap'
+          {
+            family: 'Seaweed Script',
+            variable: true,
+            weights: ['200..900']
+          },
+          {
+            family: 'Catamaran',
+            variable: true,
+            weights: ['100..200']
+          },
+        ]
       }
     },
 
