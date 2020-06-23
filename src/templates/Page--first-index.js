@@ -5,7 +5,7 @@ import { Site } from '../components/Site';
 
 const Page = ({ children, ...other }) => {
   return (
-    <Site {...other}>
+    <Site header={false} {...other}>
       <Container>{children}</Container>
     </Site>
   );

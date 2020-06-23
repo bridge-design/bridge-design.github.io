@@ -5,6 +5,8 @@ import { uid } from 'react-uid';
 import styled from 'styled-components';
 import { Container } from '../Container';
 
+import { colors } from '../DesignTokens';
+
 const items = [
   { label: 'Home', to: '/' },
   { label: 'Markdown', to: '/markdown/' },
@@ -28,7 +30,7 @@ const social = [
 const Wrapper = styled('nav')`
   display: flex;
   align-items: center;
-  background-color: #663399;
+  background-color: ${colors.secondary.value};
   color: #fff;
   overflow: hidden;
 `;
@@ -106,7 +108,7 @@ export const Social = styled('div')`
   }
 `;
 
-const Navigation = ({ path }) => {
+const Header = ({ path }) => {
   const {
     site: {
       siteMetadata: { name },
@@ -152,8 +154,8 @@ const Navigation = ({ path }) => {
   );
 };
 
-Navigation.propTypes = {
+Header.propTypes = {
   path: PropTypes.string.isRequired,
 };
 
-export { Navigation };
+export { Header };

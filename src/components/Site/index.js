@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint'
 
 import { Footer } from '../Footer';
-import { Navigation } from '../Navigation';
+import { Header } from '../Header';
 import { Theme } from '../Theme';
 import { Seo } from './Seo';
 
@@ -16,8 +16,9 @@ export const Main = styled.div`
   `}
 `
 
-const Site = ({ location, pageContext, path, seo, children }) => (
+const Site = ({ header = true, location, pageContext, path, seo, children }) => (
   <Theme>
+    { header && <Header/> }
     <Seo location={location} pageContext={pageContext} seo={seo} />
     <Main>{children}</Main>
     <Footer />
