@@ -59,6 +59,16 @@ module.exports = {
         include: /src/
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Seaweed+Script`,
+          // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
 
     // The following are all optional plugins that you may find useful.
     // If you choose not to use them, consider removing them from your package.json!
