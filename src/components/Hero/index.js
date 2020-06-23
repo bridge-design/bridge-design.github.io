@@ -3,8 +3,18 @@ import styled from 'styled-components';
 
 import { colors } from '../DesignTokens';
 
+import BridgeIcon from '../../assets/bridge.svg'
+
+const Logo = styled(BridgeIcon)`
+  width: 200px;
+`;
+
+export const Wrapper = styled.div``;
+
 const Hero = () => (
-  <h1>I am hero</h1>
+  <Wrapper>
+    <Logo/>
+  </Wrapper>
 );
 
 export { Hero };
