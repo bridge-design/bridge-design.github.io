@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    name: 'Bridge the gap between design and development',
+    name: 'Bridge',
     basepath: 'https://bridge-tool.github.io',
     description: 'Bridge is a tool to bridge the gap between design and development.',
     keywords: ['design systems', 'design', 'development', 'ui'],

@@ -7,12 +7,6 @@ import { Container } from '../Container';
 
 import { colors } from '../DesignTokens';
 
-const items = [
-  { label: 'Home', to: '/' },
-  { label: 'Markdown', to: '/markdown/' },
-  { label: 'Storybook', href: '/docs/' },
-];
-
 const social = [
   {
     label: (
@@ -33,6 +27,7 @@ const Wrapper = styled('nav')`
   background-color: ${colors.secondary.value};
   color: #fff;
   overflow: hidden;
+  min-height: 80px;
 `;
 
 const Inner = styled('div')`
@@ -66,48 +61,6 @@ const Brand = styled(Link)`
   }
 `;
 
-const Nav = styled('div')`
-  display: flex;
-  flex-flow: nowrap row;
-  flex: 1 1 auto;
-  align-items: center;
-
-  @media (max-width: 648px) {
-    margin: 0 -24px;
-    justify-content: center;
-    overflow-x: auto;
-  }
-`;
-
-const Item = styled(Link).withConfig({ shouldForwardProp: (prop) => !['isActive'].includes(prop) })`
-  padding: 16px 8px;
-  color: #fff;
-  font-weight: 500;
-  line-height: 24px;
-  opacity: ${(p) => (p.isActive ? '1' : '0.6')};
-  text-decoration: none;
-
-  :hover {
-    opacity: 1;
-    text-decoration: none;
-  }
-
-  @media (max-width: 648px) {
-    padding: 8px;
-  }
-`;
-
-export const Social = styled('div')`
-  margin: 0;
-  display: flex;
-  flex-flow: nowrap row;
-  align-items: center;
-
-  @media (max-width: 648px) {
-    display: none;
-  }
-`;
-
 const Header = ({ path }) => {
   const {
     site: {
@@ -128,26 +81,6 @@ const Header = ({ path }) => {
       <Container maxWidth={1200}>
         <Inner>
           <Brand to="/">{name}</Brand>
-          <Nav>
-            {items.map(({ label, to, href }) =>
-              to ? (
-                <Item key={uid(label)} to={to} isActive={to === path}>
-                  {label}
-                </Item>
-              ) : (
-                <Item key={uid(label)} as="a" href={href}>
-                  {label}
-                </Item>
-              ),
-            )}
-          </Nav>
-          <Social>
-            {social.map(({ label, href }) => (
-              <Item key={uid(label)} as="a" href={href} style={{ lineHeight: 0 }}>
-                {label}
-              </Item>
-            ))}
-          </Social>
         </Inner>
       </Container>
     </Wrapper>
