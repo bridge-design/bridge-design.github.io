@@ -40,7 +40,7 @@ const Hero = () => (
       <Name>Bridge </Name>
       <Slogan> a tool to bridge the gap between design and development</Slogan>
     </p>
-    <ValueText>Build your brand and design system together!</ValueText>
+    <ValueText>Document your brand and design system by all the processionals together.</ValueText>
   </Wrapper>
 );
 
