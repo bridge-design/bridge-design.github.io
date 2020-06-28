@@ -9,7 +9,7 @@ import { Header } from '../Header';
 import { Theme } from '../Theme';
 import { Seo } from './Seo';
 
-export const Main = styled(Container)`
+export const Main = styled.div`
   min-height: calc(100vh - 100px - 80px);
 `
 
