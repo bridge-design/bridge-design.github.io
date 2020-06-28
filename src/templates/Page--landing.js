@@ -16,7 +16,7 @@ const CellLeft = styled(Cell)`
 const Page = ({ children, ...other }) => {
   return (
     <Site header={false} {...other}>
-      <Grid columns={2} gap={'0'}>
+      <Grid  columns="repeat(auto-fit,minmax(500px,1fr))" gap={'0'}>
         <CellLeft width={1}>
           <Hero/>
         </CellLeft>
