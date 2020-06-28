@@ -7,9 +7,9 @@ import { colors, fonts } from '../DesignTokens';
 const Wrapper = styled('footer')`
   height: 100px;
   padding: 24px 0;
-  background-color: ${colors.primary.value};
+  background-color: ${colors.highlight.value};
   border-top: 1px solid rgba(0, 0, 0, 0.38);
-  color: rgba(255, 255, 255, 0.54);
+  color: ${colors.black.value};
   font-size: 14px;
   font-family: ${fonts.regular};
   font-weight: 200;

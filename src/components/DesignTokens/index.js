@@ -45,7 +45,7 @@ let colors = {
   },
 
   black: {
-    value: '#000000'
+    value: '#051939'
   },
 
 };
@@ -57,7 +57,7 @@ Object.assign(colors, {
     meaning: 'Main brand color',
   },
 
-  hightlight: {
+  highlight: {
     value: colors.pink.value,
     meaning: 'Highlights',
   },
