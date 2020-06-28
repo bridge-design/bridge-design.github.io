@@ -75,8 +75,8 @@ Object.assign(colors, {
 });
 
 const fonts = {
-  logo: '"Seaweed Script", cursive',
-  regular: '"Catamaran", sans-serif',
+  brand: '"Rubik", sans-serif',
+  regular: '"Roboto", sans-serif',
 }
 
 export {

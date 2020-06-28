@@ -64,14 +64,14 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Seaweed Script',
+            family: 'Rubik',
             variable: true,
-            weights: ['200..900']
+            weights: ['500', '700']
           },
           {
-            family: 'Catamaran',
+            family: 'Roboto',
             variable: true,
-            weights: ['100..200']
+            weights: ['400', '500']
           },
         ]
       }
