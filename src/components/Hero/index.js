@@ -3,44 +3,45 @@ import styled from 'styled-components';
 
 import { colors, fonts } from '../DesignTokens';
 
-import BridgeIcon from '../../assets/bridge.svg'
+import TeamWorkImage from './teamwork.svg';
+
+const TeamWork = styled(TeamWorkImage)`
+  margin: 0 50px;
+`;
 
 export const Wrapper = styled.div`
   width: 100%;
-  text-align: center;
-  padding: 20px;
+  color: ${colors.white.value};
+  max-width: 750px;
 `;
 
-export const Logo = styled(BridgeIcon)`
-  width: 200px;
-  margin: 0 auto;
+const TextWrapper = styled.div`
+  margin: 50px 125px;
 `;
 
-export const Name = styled.span`
-  font-size: 40px;
-  font-family: ${fonts.logo};
+export const ValueText = styled.h1`
+  font-size: 50px;
+  font-family: ${fonts.brand};
+  font-weight: 700;
+  line-height: 1.25em;
+  margin: 50.52px auto;
 `;
 
-export const Slogan = styled.span`
-  font-size: 30px;
+export const SubText = styled.h2`
+  font-size: 16px;
   font-family: ${fonts.regular};
-  font-weight: 200;
-`;
-
-export const ValueText = styled.p`
-  font-size: 20px;
-  font-family: ${fonts.regular};
-  font-weight: 200;
+  font-weight: 500;
 `;
 
 const Hero = () => (
   <Wrapper>
-    <Logo/>
-    <p>
-      <Name>Bridge </Name>
-      <Slogan> a tool to bridge the gap between design and development</Slogan>
-    </p>
-    <ValueText>Document your brand and design system by all the processionals together.</ValueText>
+
+    <TextWrapper>
+      <SubText>Bridge the gap between design and development.</SubText>
+      <ValueText>Build your brand and design&nbsp;system together!</ValueText>
+    </TextWrapper>
+
+    <TeamWork/>
   </Wrapper>
 );
 

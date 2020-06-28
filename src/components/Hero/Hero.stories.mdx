@@ -1,10 +1,14 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { Hero } from '.';
 
+import { colors } from '../DesignTokens';
+
 <Meta title="Hero" />
 
 <Preview>
   <Story name="Default">
-    <Hero />
+    <div style={{ background: colors.blue600.value }}>
+      <Hero />
+    </div>
   </Story>
 </Preview>
