@@ -8,6 +8,7 @@ import { Site } from '../components/Site';
 import { colors } from '../components/DesignTokens';
 
 import { Hero } from '../components/Hero';
+import { Logo } from '../components/Logo';
 
 const CellLeft = styled(Cell)`
   background-color: ${colors.blue600.value};
@@ -21,7 +22,8 @@ const Page = ({ children, ...other }) => {
           <Hero/>
         </CellLeft>
 
-        <Cell width={1} style={{padding: '75px 125px'}}>
+        <Cell width={1} style={{padding: '50px 125px'}}>
+          <Logo align="right"/>
           {children}
         </Cell>
 
