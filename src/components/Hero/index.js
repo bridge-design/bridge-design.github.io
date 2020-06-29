@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 import { Input } from '../Input';
 import { Button } from '../Button';
@@ -13,17 +14,41 @@ const TeamWork = styled(TeamWorkImage)`
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
+  ${breakpoint('mobile')`
+    width: 100vw;
+  `}
+  ${breakpoint('tablet')`
+    width: 100%;
+  `}
+  ${breakpoint('desktop')`
+    width: 100%;
+  `}
   color: ${colors.white.value};
   max-width: 750px;
 `;
 
 const TextWrapper = styled.div`
-  margin: 50px 125px;
+  ${breakpoint('mobile')`
+    margin: 50px 20px;
+  `}
+  ${breakpoint('tablet')`
+    margin: 50px 75px;
+  `}
+  ${breakpoint('desktop')`
+    margin: 50px 125px;
+  `}
 `;
 
 export const ValueText = styled.h1`
-  font-size: 50px;
+  ${breakpoint('mobile')`
+    font-size: 32px;
+  `}
+  ${breakpoint('tablet')`
+    font-size: 50px;
+  `}
+  ${breakpoint('desktop')`
+    font-size: 50px;
+  `}
   font-family: ${fonts.brand};
   font-weight: 700;
   line-height: 1.25em;
