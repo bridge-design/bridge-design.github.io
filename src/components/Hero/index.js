@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Input } from '../Input';
+import { Button } from '../Button';
+
 import { colors, fonts } from '../DesignTokens';
 
 import TeamWorkImage from './teamwork.svg';
@@ -33,12 +36,45 @@ export const SubText = styled.h2`
   font-weight: 500;
 `;
 
+export const SubscribeText = styled.p`
+  font-size: 16px;
+  font-family: ${fonts.regular};
+  font-weight: 400;
+`;
+
+export class SubscribeForm extends React.Component {
+
+  handleSubmit() {
+    window.open('https://tinyletter.com/bridgetool',
+        'popupwindow', 'scrollbars=yes,width=800,height=600');
+  }
+
+  render() {
+    return (
+      <form
+        name="subscribe-launch-form"
+        action="https://tinyletter.com/bridgetool"
+        method="post"
+        target="popupwindow"
+        onSubmit={this.handleSubmit.bind(this)}>
+        <SubscribeText>Be first to learn about Bridge launch!</SubscribeText>
+        <Input placeholder="Enter your email" name="email" id="tlemail" />
+        <input type="hidden" value="1" name="embed"/>
+        <Button
+          type="primary"
+          htmlType="submit" onSubmit={this.handleSubmit.bind(this)} style={{margin: "16px 0"}}>Subscribe Now</Button>
+      </form>
+    )
+  }
+}
+
 const Hero = () => (
   <Wrapper>
 
     <TextWrapper>
       <SubText>Bridge the gap between design and development.</SubText>
       <ValueText>Build your brand and design&nbsp;system together!</ValueText>
+      <SubscribeForm/>
     </TextWrapper>
 
     <TeamWork/>
