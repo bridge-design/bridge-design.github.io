@@ -28,12 +28,14 @@ export const ValueText = styled.h1`
   font-weight: 700;
   line-height: 1.25em;
   margin: 50.52px auto;
+  color: ${colors.white.value};
 `;
 
 export const SubText = styled.h2`
   font-size: 16px;
   font-family: ${fonts.regular};
   font-weight: 500;
+  color: ${colors.white.value};
 `;
 
 export const SubscribeText = styled.p`
