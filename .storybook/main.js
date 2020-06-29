@@ -44,6 +44,21 @@ module.exports = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
+      {
+        test: /\.less$/,
+        loaders: [
+            "style-loader",
+            "css-loader",
+            {
+                loader: "less-loader",
+                options: {
+                  lessOptions: {
+                    javascriptEnabled: true
+                  }
+                }
+            }
+        ],
+      }
     ];
 
     config.module.rules = [...config.module.rules, ...extraRules];

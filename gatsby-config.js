@@ -76,6 +76,18 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: false
+      }
+    },
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+      },
+    },
 
     // The following are all optional plugins that you may find useful.
     // If you choose not to use them, consider removing them from your package.json!
