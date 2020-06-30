@@ -36,8 +36,16 @@ let colors = {
     value: '#051939'
   },
 
-  pink: {
+  pink400: {
+    value: '#FFA0CE'
+  },
+
+  pink500: {
     value: '#FF78BA'
+  },
+
+  pink600: {
+    value: '#FF5FAD'
   },
 
   white: {
@@ -58,7 +66,7 @@ Object.assign(colors, {
   },
 
   highlight: {
-    value: colors.pink.value,
+    value: colors.pink500.value,
     meaning: 'Highlights',
   },
 

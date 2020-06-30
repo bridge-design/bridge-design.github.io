@@ -27,6 +27,9 @@ export const LandingGrid = styled(Grid)`
 export const CellLeft = styled(Cell)`
   background-color: ${colors.blue600.value};
   margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
 `;
 
 export const CellRight = styled(Cell)`
@@ -37,7 +40,7 @@ export const CellRight = styled(Cell)`
     margin: 50px 75px;
   `}
   ${breakpoint('desktop')`
-    margin: 85px 125px 30px;
+    margin: 65px 125px 30px;
   `}
 `;
 
