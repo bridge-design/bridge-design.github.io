@@ -1,37 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../Container';
 
 import { colors, fonts } from '../DesignTokens';
 
 const Wrapper = styled('footer')`
   height: 100px;
   padding: 24px 0;
-  background-color: ${colors.highlight.value};
-  border-top: 1px solid rgba(0, 0, 0, 0.38);
-  color: ${colors.black.value};
+  background-color: ${colors.blue700.value};
+  color: ${colors.white.value};
   font-size: 14px;
   font-family: ${fonts.regular};
-  font-weight: 200;
   line-height: 24px;
 
-
   a {
-    color: #fff;
-    text-decoration: none;
+    color: ${colors.white.value};;
+    text-decoration: underline;
 
     :hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
-  }
-`;
-
-const Inner = styled('div')`
-  display: flex;
-  flex-flow: nowrap row;
-
-  @media (max-width: 648px) {
-    flex-flow: nowrap column;
   }
 `;
 
@@ -50,25 +37,21 @@ const Base = styled('div')`
 `;
 
 const Right = styled(Base)`
-  margin-left: auto;
   text-align: right;
+  padding: 0 24px;
 `;
 
 const Footer = () => (
   <Wrapper>
-    <Container maxWidth={1200}>
-      <Inner>
-        <Right>
-          <div>
-            Copyright ©{' '}
-            Bridge Tool, 2020.
-          </div>
-          <div>
-            <a href="https://github.com/bridge-tool/bridge-tool.github.com/blob/develop/LICENSE">CC BY-NC</a> Licensed.
-          </div>
-        </Right>
-      </Inner>
-    </Container>
+    <Right>
+      <div>
+        ©{' '}
+        Bridge Tool, {new Date().getFullYear()}.
+      </div>
+      <div>
+        <a href="https://github.com/bridge-tool/bridge-tool.github.com/blob/develop/LICENSE">CC BY-NC</a> Licensed.
+      </div>
+      </Right>
   </Wrapper>
 );
 

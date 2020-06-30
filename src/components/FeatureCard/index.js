@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import { colors, fonts } from '../DesignTokens';
 
 export const Wrapper = styled.div`
-  margin: 0 0 2em;
+  margin: 0 0 3em;
 `;
 
 export const Title = styled.h4`
-  font-size: 16px;
-  font-family: ${fonts.regular};
+  font-size: 18px;
+  font-family: ${fonts.brand};
   font-weight: 500;
   line-height: 1.15em;
   color: ${colors.blue600.value};
@@ -26,9 +26,7 @@ export const SubTitle = styled.p`
 const FeatureCard = ({ title, subtitle }) => (
   <Wrapper>
     <Title>{title}</Title>
-    <SubTitle>
-      {subtitle}
-    </SubTitle>
+    <SubTitle>{subtitle}</SubTitle>
   </Wrapper>
 );
 

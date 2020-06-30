@@ -12,7 +12,7 @@ export const LogoContainer = styled(LogoImage)`
 `;
 
 const Logo = ({align = "left"}) => (
-    <LogoContainer align={align} style={{marginRight: "-26px"}}/>
+    <LogoContainer align={align} />
 );
 
 export { Logo };

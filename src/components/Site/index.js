@@ -9,15 +9,11 @@ import { Header } from '../Header';
 import { Theme } from '../Theme';
 import { Seo } from './Seo';
 
-export const Main = styled.div`
-  min-height: calc(100vh - 100px - 80px);
-`
-
 const Site = ({ header = true, location, pageContext, path, seo, children }) => (
   <Theme>
     { header && <Header/> }
     <Seo location={location} pageContext={pageContext} seo={seo} />
-    <Main>{children}</Main>
+    {children}
     <Footer />
   </Theme>
 );
