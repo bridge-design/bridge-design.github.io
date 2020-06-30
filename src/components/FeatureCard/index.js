@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { colors, fonts } from '../DesignTokens';
 
 export const Wrapper = styled.div`
+  margin: 0 0 2em;
 `;
 
 export const Title = styled.h4`

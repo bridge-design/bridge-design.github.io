@@ -10,7 +10,7 @@ import { colors, fonts } from '../DesignTokens';
 import TeamWorkImage from './teamwork.svg';
 
 const TeamWork = styled(TeamWorkImage)`
-  margin: 0 50px;
+  margin: 20px 50px 0;
 `;
 
 export const Wrapper = styled.div`
