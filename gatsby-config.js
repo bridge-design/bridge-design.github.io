@@ -5,7 +5,7 @@ module.exports = {
     description: 'Bridge is a tool to bridge the gap between design and development.',
     keywords: ['design systems', 'design', 'development', 'ui'],
     type: 'website',
-    image: 'https://bridge-tool.github.io/bridge.png',
+    image: 'https://bridge-tool.github.io/logo.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -50,7 +50,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/bridge.png', // This path is relative to the root of the site
+        icon: 'src/assets/logo.png', // This path is relative to the root of the site
       },
     },
     {
