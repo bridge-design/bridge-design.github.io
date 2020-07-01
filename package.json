@@ -1,7 +1,7 @@
 {
-  "name": "@south-paw/awesome-gatsby-starter",
-  "version": "3.0.0",
-  "description": "A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment",
+  "name": "@bridge-tool/site",
+  "version": "0.1.0",
+  "description": "Website for Bridge",
   "keywords": [
     "gatsby",
     "gatsby-starter"
