@@ -83,7 +83,7 @@ export class SubscribeForm extends React.Component {
         target="popupwindow"
         onSubmit={this.handleSubmit.bind(this)}
       >
-        <SubscribeText>Be the first to learn about Bridge launch and get access to beta</SubscribeText>
+        <SubscribeText>Be the first to learn about Bridge launch and get access to our beta</SubscribeText>
         <Input placeholder="Enter your email" name="email" id="tlemail" />
         <input type="hidden" value="1" name="embed" />
         <Button type="primary" htmlType="submit" onSubmit={this.handleSubmit.bind(this)} style={{ margin: '16px 0' }}>
