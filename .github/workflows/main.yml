@@ -22,6 +22,7 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
+    - uses: storybookjs/action@releases/v1
 
     # Runs a single command using the runners shell
     - name: Installing scripts
