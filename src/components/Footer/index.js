@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { colors, fonts } from '../DesignTokens';
 
 const Wrapper = styled('footer')`
+  width: 100%;
   height: 100px;
   padding: 24px 0;
   background-color: ${colors.blue700.value};
@@ -12,8 +13,11 @@ const Wrapper = styled('footer')`
   font-family: ${fonts.regular};
   line-height: 24px;
 
+  display: flex;
+  justify-content: space-between;
+
   a {
-    color: ${colors.white.value};;
+    color: ${colors.white.value};
     text-decoration: underline;
 
     :hover {
@@ -23,27 +27,36 @@ const Wrapper = styled('footer')`
 `;
 
 const Base = styled('div')`
-  @media (max-width: 648px) {
-    margin: 0;
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: center;
-    text-align: center;
+  padding: 0 24px;
+  display: flex;
 
-    > *:first-child {
-      margin-right: 8px;
-    }
+  @media (max-width: 648px) {
+    padding: 0 12px;
   }
+`;
+
+const Left = styled(Base)`
+  text-align: left;
+
+  flex-direction: column;
+  justify-content: center;
+
 `;
 
 const Right = styled(Base)`
   text-align: right;
-  padding: 0 24px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    padding-left: 24px;
+  }
 `;
 
 const Footer = () => (
   <Wrapper>
-    <Right>
+      <Left>
       <div>
         ©{' '}
         Bridge Tool, {new Date().getFullYear()}.
@@ -51,6 +64,10 @@ const Footer = () => (
       <div>
         <a href="https://github.com/bridge-tool/bridge-tool.github.com/blob/develop/LICENSE">CC BY-NC</a> Licensed.
       </div>
+      </Left>
+    <Right>
+      <a target="_blank" rel="noopener noreferrer" href="#">Email</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bridge_tool">Twitter</a>
       </Right>
   </Wrapper>
 );

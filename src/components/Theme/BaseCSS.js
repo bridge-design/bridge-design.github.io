@@ -9,8 +9,9 @@ export const BaseCSS = createGlobalStyle`
 
   html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
     line-height: 24px;
+    min-width: 320px;
+    font-size: 16px;
   }
 
   body {
