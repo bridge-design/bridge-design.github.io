@@ -66,8 +66,8 @@ const Footer = () => (
       </div>
       </Left>
     <Right>
-      <a target="_blank" rel="noopener noreferrer" href="#">Email</a>
-      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bridge_tool">Twitter</a>
+      <a target="_blank" rel="noopener noreferrer" href="mailto:info@bridgetool.io">Email us to info@bridgetool.io</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bridge_tool">@bridge_tool on Twitter</a>
       </Right>
   </Wrapper>
 );
