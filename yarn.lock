@@ -9280,6 +9280,13 @@ gatsby-page-utils@^0.2.9:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-amplitude-analytics@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-amplitude-analytics/-/gatsby-plugin-amplitude-analytics-2.0.0.tgz#a963cdc588cc0225ab19e103bcc0db20399e23af"
+  integrity sha512-z4lBxUdDSybOetnKf3mFefJOdGYuiewFslq66ISV+yMiDarQL5OpqEiZwBqRa5FIH0+IOkKeXapvqMPpd+oA/A==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-antd@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-antd/-/gatsby-plugin-antd-2.2.0.tgz#9d9565e3e98e03517854b1b68b7bdcac9ed73d27"
