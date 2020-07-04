@@ -88,6 +88,30 @@ module.exports = {
         javascriptEnabled: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-amplitude-analytics`,
+      options: {
+        // Specify the API key for your Amplitude Project (required)
+        apiKey: "e5cd9cd75ff2d223b53ad095852a677a",
+        // Puts tracking script in the head instead of the body (optional)
+        head: false,
+        // Prevents loading Amplitude and logging events if visitors have "Do Not Track" enabled (optional)
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths (optional)
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Override the default event types (optional)
+        // eventTypes: {
+        //   outboundLinkClick: 'OUTBOUND_LINK_CLICK',
+        //   pageView: 'PAGE_VIEW',
+        // },
+        // Amplitude JS SDK configuration options (optional)
+        amplitudeConfig: {
+          saveEvents: true,
+          includeUtm: true,
+          includeReferrer: true
+        }
+      },
+    },
 
     // The following are all optional plugins that you may find useful.
     // If you choose not to use them, consider removing them from your package.json!
